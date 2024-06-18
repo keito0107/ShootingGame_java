@@ -7,7 +7,8 @@ public class EnemyBase extends Enemy {
 			f.setColor(0, 128, 0);
 			f.fillOval(x, y, 32, 32);
 			f.setColor(200, 200, 200);
-			f.fillOval(x-16, y+8, 64, 16);	
+			f.fillOval(x-16, y+8, 64, 16);
+			
 	}
 	public void move() {
 		super.move();
@@ -15,6 +16,9 @@ public class EnemyBase extends Enemy {
 		if(x<100)vx=1;
 		if(Math.random()<0.05) {
 			GameWorld.enemies.add(new StraightEnemy(x,y,0,2));
+		}
+		if(Math.random()<0.05) {
+			GameWorld.enemies.add(new RandomEnemy(x,y,0,1));
 		}
 	}
 }
