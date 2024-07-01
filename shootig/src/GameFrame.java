@@ -105,7 +105,7 @@ public void checkPlayerBulletsAndEnemies() {
 		if(hits>0) {
 			GameWorld.playerBullets.remove(i);
 		}else {
-			j++;
+			i++;
 		}
 	}
 }

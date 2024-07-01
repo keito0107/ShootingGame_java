@@ -5,7 +5,7 @@ public class Player extends Character implements KeyListener{
 		f.setColor(0, 128,0);
 		f.fillRect(x, y+20, 30, 10);
 		f.setColor(200, 200, 200);
-		f.fillRect(+10, y, 10, 30);
+		f.fillRect(x+10, y, 10, 30);
 		
 	}
 	public Player(double x,double y,double vx,double vy) {
@@ -15,7 +15,7 @@ public class Player extends Character implements KeyListener{
 		if(e.getKeyCode()==KeyEvent.VK_LEFT) {
 			vx=-5;
 		}
-		if(e.getKeyCode()==KeyEvent.VK_LEFT) {
+		if(e.getKeyCode()==KeyEvent.VK_RIGHT) {
 			vx=5;
 		}
 		if(e.getKeyCode()==KeyEvent.VK_SPACE) {
